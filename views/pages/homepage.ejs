@@ -1,0 +1,60 @@
+<div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
+  <div class="hero d-flex flex-column justify-content-center" full-page-hero>
+    <div class="container text-center">
+      <img alt="Ration.io logo" src="/images/ration-logo.png"/>
+      <h1 class="text-muted">Be cool. <span class="text-secondary">Share your stuff.</span></h1>
+      <div>
+        <div class="more-info-text text-info" @click="clickHeroButton()">
+          <div class="text">Learn more</div>
+          <div class="icon">&darr;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-wrapper bg-dark" role="scroll-destination">
+    <div class="container">
+      <div class="about text-center">
+        <h3>Borrow what you need, lend out what you don't.</h3>
+        <p>Sharing items with Ration is super easy. Take a picture of stuff you don't want to take up space in your apartment/house/basement/whatever, but still kinda want to keep in case you need it someday. Then, if a friend needs it, they'll come get it! The bond of friendship will strengthen, and you'll have more space.</p>
+      </div>
+      <div class="features text-center">
+        <div class="row">
+          <div class="feature col-sm">
+            <div class="icon bg-info">
+              <i class="fa fa-list-ul"></i>
+            </div>
+            <h4>List</h4>
+            <p>Easily upload photos of items you don't need at the moment, and watch them disappear.</p>
+          </div>
+          <div class="col-sm feature">
+            <div class="icon bg-primary">
+              <i class="fa fa-heart"></i>
+            </div>
+            <h4>Share</h4>
+            <p>Let your friends know you care by trusting them with your personal property.</p>
+          </div>
+          <div class="col-sm feature">
+            <div class="icon bg-danger">
+              <i class="fa fa-handshake-o"></i>
+            </div>
+            <h4>Borrow</h4>
+            <p>Get seldom-used, fleetingly-needed items from friends instead of buying them new.</p>
+          </div>
+        </div>
+        <a class="btn btn-outline-success mt-5" href="/signup">Join now</a>
+      </div>
+    </div>
+  </div>
+  <div class="more-info-wrapper">
+    <div class="container">
+      <div class="text-center">
+        <h3>Is this for real?</h3>
+        <p>You came here from the <a target="_blank" href="https://courses.platzi.com/classes/sails-js/">full-stack JavaScript course</a> or the <a target="_blank" href="https://sailsjs.com">Sails website</a>, didn't you?</p>
+        <p>Ration itself isn't the core product for a real tech startup, no. It's an example app that <a target="_blank" href="https://sailsjs.com/about">Sails Co.</a> made to demonstrate a full-featured web application built with Node.js/Sails.js and Vue.js. But don't let that stop you from looking around! Feel free to create an account, invite friends, upload photos, and peruse the <a target="_blank" href="https://github.com/mikermcneil/ration">source code</a>.</p>
+        <a class="btn btn-primary mt-3 mb-4 mr-2" target="_blank" href="https://courses.platzi.com/classes/sails-js/">Take the course</a>
+        <a class="btn btn-outline-primary mt-3 mb-4" target="_blank" href="https://github.com/mikermcneil/ration">Download source code</a>
+      </div>
+    </div>
+  </div>
+</div>
+<%- /* Expose locals as `window.SAILS_LOCALS` :: */ exposeLocalsToBrowser() %>
